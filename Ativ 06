@@ -1,0 +1,10 @@
+programa {
+  funcao inicio() {
+    real area, raio
+    real pi = 3.14
+    escreva ("digite a medida do raio")
+    leia (raio)
+    area= pi * (raio * raio)
+    escreva("area=", area) 
+  }
+}
