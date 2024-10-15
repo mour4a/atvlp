@@ -1,0 +1,13 @@
+programa {
+  funcao inicio() {
+    inteiro a
+    escreva("digite um numero\n")
+    leia (a)
+    se (a % 2 == 1)
+    escreva ("impar \n")
+    senao
+    escreva ("par \n")
+
+   
+  }
+}
