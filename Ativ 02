@@ -1,0 +1,11 @@
+programa {
+  funcao inicio() {
+    inteiro a, b, soma
+    escreva ("digite um numero \n")
+    leia (a)
+       escreva ("digite outro numero \n")
+    leia (b)
+    soma=a+b
+    escreva("a soma e\n",soma )
+  }
+}
