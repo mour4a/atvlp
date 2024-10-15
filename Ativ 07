@@ -1,0 +1,10 @@
+programa {
+  funcao inicio() {
+    real c, f
+    escreva("digite um numero")
+    leia (c)
+    f=(c*1.8)+32
+    escreva (f)
+
+  }
+}
