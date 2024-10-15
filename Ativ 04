@@ -1,0 +1,14 @@
+programa {
+  funcao inicio() {
+    inteiro a,b
+    escreva ("digite um numero\n")
+    leia (a)
+    escreva ("digite outro numero\n")
+    leia (b)
+  se (a>b)
+  escreva("maior")
+  senao
+  escreva("menor")
+
+  }
+}
