@@ -1,0 +1,13 @@
+programa {
+  funcao inicio() {
+    inteiro a,b,c, media
+    escreva("digite um numero\n")
+    leia(a)
+    escreva("digite outro numero\n")
+    leia(b)
+    escreva("digite outro numero\n")
+    leia (c)
+media=(a+b+c)/3
+escreva (media)
+  }
+}
