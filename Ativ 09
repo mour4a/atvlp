@@ -1,0 +1,15 @@
+programa {
+  funcao inicio() {
+    inteiro numero, fatorial, resultado
+    resultado=1
+    escreva ("digite um numero: \n ")
+        leia (numero)
+
+        para (fatorial = 1; fatorial <= numero; fatorial++)
+        {
+            resultado = resultado * fatorial
+        }
+
+        escreva ("O fatorial de ", numero, " é: ", resultado)
+  }
+}
