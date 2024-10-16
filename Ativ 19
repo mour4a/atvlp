@@ -1,0 +1,20 @@
+programa {
+   inclua biblioteca Util --> u
+  funcao inicio() {
+    inteiro numero_secreto, palpite
+    numero_secreto = u.sorteia(1,100)
+    escreva("adivinha numero secreto entre 1 e 100: ")
+    leia(palpite)
+    enquanto(palpite != numero_secreto){
+      se(palpite<numero_secreto){
+        escreva("muito baixo! tente novamente: ")
+      } senao {
+        escreva("muito alto! tente novamente: ")
+      }
+      leia(palpite)
+    }
+escreva("parabens! voce adivinhou o numero secreto: ",numero_secreto,"\n")
+   
+
+  }
+}
