@@ -1,0 +1,67 @@
+programa {
+  funcao inicio() {
+    inteiro numero, i, soma, fatorial
+    cadeia fibonacci
+    cadeia inverso
+    inteiro a,b,temp
+    logico primo=verdadeiro
+    escreva("digite um numero inteiro positivo:")
+    leia(numero)
+
+    se(numero<=0){
+      escreva("por favor digite um numero inteiro positivo. \n")
+      retorne
+    }
+    se (numero==1){
+      primo=falso
+    } senao {
+      para(i=2;i*i<=numero;i++){
+        se (numero% i==0){
+          primo=falso
+          pare
+        }
+      }
+    }
+    se(primo){
+      escreva(numero, " e um numero primo. \n")
+    } senao {
+      escreva(numero, " nao e um numero primo. \n")
+    }
+
+    soma=0
+    para(i=1; i<=numero; i++){
+      soma=soma+i
+    }
+    escreva(" a soma dos numeros naturais ate ",numero, " e :", soma, "\n")
+
+    a=0
+    b=1
+    escreva("os primeiros ",numero, " termos da sequencia de fibonacci sao: ")
+    escreva(a, " ")
+    se(numero>1){
+      escreva(b, " ")
+    }
+    para(i=3; i<=numero; i++){
+      temp=a+b
+      escreva(temp, " ")
+      a=b
+      b=temp
+    }
+    escreva("\n")
+
+    inverso=" "
+    inteiro numero_original = numero
+    enquanto(numero>0){
+      inverso=inverso+(numero%10)
+      numero=numero/10
+    }
+    escreva("o inverso do numero ",numero_original, " é: ", inverso, "\n")
+
+    fatorial=1
+    para(i=1; i<=numero_original;i++){
+      fatorial=fatorial*i
+    }
+    escreva("o fatorial do numero ",numero_original, " é: ", fatorial, "\n")
+
+  }
+}
